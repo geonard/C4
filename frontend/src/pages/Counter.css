@@ -1,0 +1,25 @@
+/* Counter.css */
+.counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .counter button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .counter span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
