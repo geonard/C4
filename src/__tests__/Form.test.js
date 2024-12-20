@@ -69,7 +69,9 @@ describe('Form Component', () => {
       expect(fetch).toHaveBeenCalledTimes(1);
     });
 
-    expect(fetch).toHaveBeenCalledWith('http://localhost:5000/submit-form', expect.any(Object));
+    const apiURL = process.env.REACT_APP_API_URL;
+    
+    expect(fetch).toHaveBeenCalledWith('{apiURL}/submit-form', expect.any(Object));
   });
 
   test('renders products list', async () => {

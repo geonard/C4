@@ -128,7 +128,9 @@ const Form = ({ setProduits }) => {
       categorie: categoriesSelectionnees
     };
 
-    fetch('http://localhost:5000/submit-form', {
+    const apiUrl = process.env.REACT_APP_API_URL;
+
+    fetch('{apiURL}/submit-form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
